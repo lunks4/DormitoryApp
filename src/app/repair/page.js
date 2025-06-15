@@ -349,13 +349,11 @@ function ElectricianForm() {
           value={problem}
           onChange={(e) => setProblem(e.target.value)}
           className="w-full p-2 border border-gray-300 rounded-lg h-32"
-          placeholder="Например: Протекает кран в раковине"
           required
         />
       </div>
 
       <div className="mb-4">
-        <label className="block text-gray-700 mb-2">Прикрепить фото</label>
         <div className="flex flex-wrap gap-2 mb-2">
           {photos.map((photo, index) => (
             <div key={index} className="relative">

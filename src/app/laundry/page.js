@@ -201,24 +201,6 @@ export default function LaundryPage() {
           </button>
         )}
 
-        {/* Confirmation modal */}
-        {showConfirmation && lastBookingInfo && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white p-6 rounded-lg max-w-sm w-full">
-            <h3 className="text-xl font-bold mb-3">Бронирование подтверждено!</h3>
-            <p className="mb-4">
-                Машина #{lastBookingInfo.machine} забронирована на {lastBookingInfo.time}–{addDuration(lastBookingInfo.time, lastBookingInfo.duration)}, {formatDisplayDate(lastBookingInfo.date)}.
-            </p>
-            <button
-                onClick={() => setShowConfirmation(false)}
-                className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg"
-            >
-                Хорошо
-            </button>
-            </div>
-        </div>
-        )}
-
         {/* User bookings */}
         <div className="mt-8">
           <h2 className="text-lg font-semibold mb-3">Мои бронирования</h2>
