@@ -13,28 +13,27 @@ export default function AnnouncementsPage() {
       title: 'Проверка пожарной безопасности',
       content: '20 июня пройдет плановая проверка пожарной безопасности. Просьба обеспечить доступ в комнаты.',
       author: 'Администрация',
-      date: '2023-06-12'
+      date: '2025-06-12',
+      startDate: '2025-06-20T00:00:00',
+      endDate: null
     },
     {
       id: 2,
-      title: 'Ищу соседа',
-      content: 'Студент 2 курса ищет соседа в комнату 305. Звонить после 18:00.',
-      author: 'Иван Петров',
-      date: '2023-06-11'
-    },
-    {
-      id: 3,
       title: 'Уборка территории',
       content: '18 июня в 10:00 состоится субботник. Участие всех жильцов обязательно.',
       author: 'Комендант',
-      date: '2023-06-09'
+      date: '2025-06-09',
+      startDate: '2025-06-18T10:00:00',
+      endDate: null
     },
     {
-      id: 4,
+      id: 3,
       title: 'Замена ламп в коридорах',
       content: 'Сегодня с 14:00 до 16:00 будет проводиться замена ламп освещения на 3 этаже.',
       author: 'Электрик',
-      date: '2023-06-15'
+      date: '2025-06-15',
+      startDate: '2025-06-15T14:00:00',
+      endDate: '2025-06-15T16:00:00'
     }
   ]
 
@@ -65,6 +64,8 @@ export default function AnnouncementsPage() {
               date={item.date}
               source={item.author}
               isAnnouncement={true}
+              startDate={item.startDate}
+              endDate={item.endDate}
             />
           ))}
         </div>
