@@ -135,7 +135,6 @@ function PlumberForm() {
           value={problem}
           onChange={(e) => setProblem(e.target.value)}
           className="w-full p-2 border border-gray-300 rounded-lg h-32"
-          placeholder="Например: Протекает кран в раковине"
           required
         />
       </div>
@@ -242,7 +241,6 @@ function CarpenterForm() {
           value={problem}
           onChange={(e) => setProblem(e.target.value)}
           className="w-full p-2 border border-gray-300 rounded-lg h-32"
-          placeholder="Например: Протекает кран в раковине"
           required
         />
       </div>
